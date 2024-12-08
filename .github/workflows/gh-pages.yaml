@@ -60,7 +60,6 @@ jobs:
           hugo \
             --buildDrafts --gc \
             --baseURL ${{ steps.pages.outputs.base_url }}
-          touch public/.nojekyll  # Add this line
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
